@@ -7,7 +7,7 @@ Build a [theos](https://github.com/theos/theos) command line tool using golang o
 
 This project needs a macOS environment with [Xcode](https://developer.apple.com/xcode/) installed.
 
-[Homebrew](https://brew.sh/) is also strongly recommended to manage the prerequisite.
+[Homebrew](https://brew.sh/) is also strongly recommended to manage the installed packages.
 
 #### THEOS
 
