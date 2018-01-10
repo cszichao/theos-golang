@@ -23,13 +23,13 @@ Follow the steps of THEOS [Installation](https://github.com/theos/theos/wiki/Ins
 #### golang
 Install [golang](https://golang.org/) to cross build the go source to static lib.
 
-`brew install golang`
+1. `brew install golang`
+1. setup the corresponding `GOROOT` and `GOPATH` environment variable
 
 #### dpkg
 [dpkg](https://en.wikipedia.org/wiki/Dpkg) is used to extract the executable file from the final .deb package.
 
-1. `brew install dpkg`
-2. setup the corresponding `GOROOT` and `GOPATH` environment variable
+`brew install dpkg`
 
 ### Building
 
