@@ -2,7 +2,9 @@ package main
 
 //#include "./main.h"
 import "C"
+
 import (
+	"flag"
 	"fmt"
 	"unsafe"
 )
@@ -10,11 +12,22 @@ import (
 //ExportMainObjectiveC main function bridge for objective c
 //export ExportMainObjectiveC
 func ExportMainObjectiveC(argc C.int, argv, envp **C.char) C.int {
+	//convert args from iOS args to golang's os.Args
 	args := goStrings(argc, argv)
+
+	//make a commadline from args
+	commandLine := flag.NewFlagSet(args[0], flag.ExitOnError)
+
+	//args declaration
+	testCmd := commandLine.String("t", "test", "command line string args test")
+
+	//parse args
+	commandLine.Parse(args[1:])
+
+	//show the result
 	fmt.Println("hello, iOS")
-	for _, args := range args {
-		fmt.Println(args)
-	}
+	fmt.Printf("command line -t input: %s\n", *testCmd)
+
 	return 0
 }
 
