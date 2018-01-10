@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash ./clean.sh
+
 # check THEOS settings
 if [ -z "$THEOS" ]; then
     echo "THEOS environment variable not set"
