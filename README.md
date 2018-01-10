@@ -11,7 +11,7 @@ This project needs a macOS environment with [Xcode](https://developer.apple.com/
 
 #### THEOS
 
-Follow the steps of THEOS [Installation](https://github.com/theos/theos/wiki/Installation). You can also flow this quick start steps:
+Follow the steps of THEOS [Installation](https://github.com/theos/theos/wiki/Installation). You can also follow this quick start steps blow:
 
 1. `mkdir ~/theos`
 1. `echo "export THEOS=~/theos" >> ~/.bash_profile`
