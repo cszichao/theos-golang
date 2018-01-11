@@ -10,6 +10,7 @@ fi
 
 if [ ! -d "$THEOS/lib" ]; then
     echo "THEOS lib [$THEOS/lib] not exists"
+    exit 1
 fi
 
 # set temp working dir
