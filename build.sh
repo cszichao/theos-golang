@@ -74,6 +74,8 @@ cp libgolang.a $THEOS"/lib/"$staticLibFileName
 # Makefile of .deb package
 echo 'include $(THEOS)/makefiles/common.mk
 
+export ARCHS = armv7 arm64
+
 TOOL_NAME = golangtool
 golangtool_FILES = main.mm
 golangtool_LDFLAGS = '$staticLibLdFlags'
